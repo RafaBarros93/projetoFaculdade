@@ -1,0 +1,26 @@
+<!-- Tabela de exibição de dados -->
+<table class="table">
+    <thead>
+      <th>Nome advogado</th>
+      <th>OAB</th>
+      <th>Número do preso</th>
+      <th>Localização</th>
+      <th>Presídio</th>
+      <th>Cela</th>
+      <th>Data</th>
+      <th>Ações</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of pessoas| async">
+        <td>{{ p.nome }}</td>
+        <td>{{p.oab}}</td>
+        <td>{{p.numeroPreso}}</td>
+        <td>{{p.localizacao}}</td>
+        <td>{{p.presidio}}</td>
+        <td>{{p.cela}}</td>
+        <td>{{dataHoje()}}</td>
+      <button class="btn btn-success btn-sm" (click)="updateItem(item.key, updatetext.value)">Editar</button>
+      <button class="btn btn-danger btn-sm" (click)="deleteItem(item.key)">Deletar</button>
+      </tr>
+    </tbody>
+  </table>

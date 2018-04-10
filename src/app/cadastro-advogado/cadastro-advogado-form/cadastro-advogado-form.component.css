@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color: whitesmoke;
+   
+}
+
+img{
+    max-width: 160px;
+    align-self: auto;
+    
+
+}
+div.jumbotron{
+    background-color: black;
+    height: 300px;
+}
+

@@ -1,0 +1,20 @@
+h1{
+    text-align: auto;
+    color: azure;
+}
+
+img{
+    max-width: 200px;
+}
+div.jumbotron{
+    background-color: black;
+    height: auto;
+    text-align: center;
+}
+label{
+    color: azure;
+}
+table{
+    background-color: black;
+    color: whitesmoke
+}
