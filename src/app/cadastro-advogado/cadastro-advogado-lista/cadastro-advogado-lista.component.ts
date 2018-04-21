@@ -24,5 +24,5 @@ export class CadastroAdvogadoListaComponent implements OnInit {
   var mes = data.getMonth() + 1;
   var ano = data.getFullYear();
   return [dia, mes, ano].join('/');
-  }
+}
 }
