@@ -1,5 +1,6 @@
 <!-- Tabela de exibição de dados -->
-<table class="table">
+<div class="table-responsive">
+  <table class="table ">
     <thead>
       <th>Nome advogado</th>
       <th>OAB</th>
@@ -19,8 +20,9 @@
         <td>{{p.presidio}}</td>
         <td>{{p.cela}}</td>
         <td>{{dataHoje()}}</td>
-      <button class="btn btn-success btn-sm" (click)="updateItem(item.key, updatetext.value)">Editar</button>
-      <button class="btn btn-danger btn-sm" (click)="deleteItem(item.key)">Deletar</button>
+      <td><button class="btn btn-success btn-sm" (click)="updateItem(item.key, updatetext.value)">Editar</button>
+        <button class="btn btn-danger btn-sm" (click)="deleteItem(item.key)">Deletar</button></td>
       </tr>
     </tbody>
   </table>
+</div>
